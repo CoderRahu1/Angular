@@ -28,6 +28,11 @@
 * git graph
 
 
+## Intall Nodejs and Angular 
+
+* Directly install from google search
+* Angular -> open cmd-> npm install -g @angular/cli@20
+
 
 
 
