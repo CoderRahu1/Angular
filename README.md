@@ -37,7 +37,6 @@
 # Angular Projects:
 
 1. Profile Card - 
-![alt text](image.png)
 <img src="image.png" alt="Profile Card" width="200"/>
 2. Counter - 
 
