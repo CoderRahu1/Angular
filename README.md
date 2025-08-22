@@ -32,6 +32,12 @@
 
 * Directly install from google search
 * Angular -> open cmd-> npm install -g @angular/cli@20
+* To create new project in terminal -> ng new Projectname
+
+# Angular Projects:
+
+1. Profile Card - 
+![alt text](image.png)
 
 
 
