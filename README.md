@@ -37,6 +37,9 @@
 # Angular Projects:
 
 1. Profile Card - 
+    * Concepts : string interpolation - {{ name }} - used to display data to app/application.html,
+    <!-- implement two way data binding next  import FormsModule in app.module.ts , use ngModel in input fields-->
+
 <img src="image.png" alt="Profile Card" width="200"/>
 2. Counter - 
 
