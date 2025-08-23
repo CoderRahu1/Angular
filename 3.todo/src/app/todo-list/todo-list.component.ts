@@ -20,3 +20,5 @@ export class TodoListComponent {
     this.tasks.splice(index, 1);
   }
 }
+
+// --- IGNORE ---
