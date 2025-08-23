@@ -37,14 +37,16 @@
 # Angular Projects:
 
 1. Profile Card - 
-    * Concepts : string interpolation - {{ name }} - used to display data to app/application.html,
+    * Concepts : string interpolation - {{ name }} - used to display data to app/application.html.
     <!-- implement two way data binding next  import FormsModule in app.module.ts , use ngModel in input fields-->
 
 <img src="image.png" alt="Profile Card" width="200"/>
+
 2. Counter - 
+    * Concepts : Event binding to method, adding ng new component counter to app
+<img src="image1.png" alt="Counter App" width="200"/>
 
-
-
+3. TODO List - 
 
 
 
