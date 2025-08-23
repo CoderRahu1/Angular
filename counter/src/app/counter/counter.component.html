@@ -8,4 +8,11 @@
     <span class="counter-value">{{ counter }}</span> 
     <!-- event binding -  -->
     <button (click)="increment()">+</button>
+    <!-- <p>The counter is <span [ngClass]="getCounterStatus()">{{ getCounterStatus() }}</span></p> -->
+    <div [ngSwitch]="getCounterStatus()">
+        <div *ngSwitchCase="'Positive'" [ngClass]="'positive'">Yay! Counter is Positive</div>
+        <div *ngSwitchCase="'Negative'" [ngStyle]="{color: 'red'}">Oops! Counter is Negative</div>
+        <div *ngSwitchDefault>Counter is Zero</div>
+    </div>
+    
 </div>

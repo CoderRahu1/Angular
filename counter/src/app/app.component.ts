@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CounterComponent } from './counter/counter.component';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
