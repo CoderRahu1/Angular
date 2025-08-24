@@ -44,12 +44,12 @@
 
 2. Counter - 
     * Concepts : Event binding to method, adding ng new component counter to app
-<img src="image1.png" alt="Counter App" width="200"/>
+<img src="image-1.png" alt="Counter App" width="200"/>
 
 3. TODO List - 
 
     * Concepts : selector from todolist component.ts should be in appcomponent.html Appcomponent.ts should contain import[todolistcomponent]
-<img src="image-1.png" alt="Todo" width="200"/>
+<img src="image-2.png" alt="Todo" width="200"/>
 
 
 
