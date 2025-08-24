@@ -48,5 +48,11 @@
 
 3. TODO List - 
 
+    * Concepts : selector from todolist component.ts should be in appcomponent.html.
+    *            Appcomponent.ts should contain import[todolistcomponent]
+
+![alt text](image-1.png)
+<img src="image-1.png" alt="Todo" width="200"/>
+
 
 
