@@ -10,8 +10,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class TodoListComponent {
   tasks: string[] = [];
-  newTask : string = '';
+  newTask : string = '';  
   addTask(){
+    if(this.newTask.trim() === '') return;
     this.tasks.push(this.newTask);
     this.newTask = ''; 
   }
