@@ -51,5 +51,10 @@
     * Concepts : selector from todolist component.ts should be in appcomponent.html Appcomponent.ts should contain import[todolistcomponent]
 <img src="image-2.png" alt="Todo" width="200"/>
 
+4. Stopwatch
+    * Concepts - pipe operator
+<img src="image-3.png" alt="Todo" width="200"/>
+
+
 
 
