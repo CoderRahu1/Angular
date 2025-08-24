@@ -1,0 +1,51 @@
+<!-- <p>stopwatch works!</p>
+<div class="stopwatch-container">
+    <h1>Stopwatch</h1>
+    <div class="display">{{ time | date:'mm:ss:SSS' }}</div>
+    <div class="buttons">
+        <button (click)="start()" [disabled]="isrunning">Start</button>
+        <button (click)="stop()" [disabled]="!isrunning">Stop</button>
+        <button (click)="reset()">Reset</button>
+    </div>
+</div> -->
+
+
+<!-- Basic -->
+<!-- <div class="stopwatch-container">
+  <h1>Stopwatch</h1>
+  <div class="display">{{ time | date:'mm:ss:SSS' }}</div>
+  <div class="buttons">
+    <button (click)="start()" [disabled]="isrunning">Start</button>
+    <button (click)="stop()" [disabled]="!isrunning">Stop</button>
+    <button (click)="reset()">Reset</button>
+  </div>
+</div> -->
+
+
+<!-- Advanced -->
+
+
+<div class="stopwatch-container">
+  <h1>Custom Timer</h1>
+  <h2>By Rahul Pillai</h2>
+
+  <!-- Input to set timer -->
+  <div class="timer-inputs">
+    <input type="number" [(ngModel)]="minutesInput" placeholder="Minutes" min="0">
+    <input type="number" [(ngModel)]="secondsInput" placeholder="Seconds" min="0">
+    <button (click)="setTimer()">Set Timer</button>
+  </div>
+
+  <!-- ✅ Display with custom formatter -->
+  <div class="display">{{ formatTime(remainingTime) }}</div>
+
+  <!-- Controls -->
+  <div class="buttons">
+    <button (click)="start()" [disabled]="isrunning || remainingTime <= 0">Start</button>
+    <button (click)="stop()" [disabled]="!isrunning">Pause</button>
+    <button (click)="reset()" [disabled]="remainingTime == totalTime || totalTime == 0">Reset</button>
+  </div>
+</div>
+
+
+
