@@ -55,6 +55,11 @@
     * Concepts - pipe operator
 <img src="image-3.png" alt="Todo" width="200"/>
 
+5. Guess the Number(Game) 
+    * Concepts - mutiple methods
+<img src="image-4.png" alt="Todo" width="200"/>
+
+
 
 
 

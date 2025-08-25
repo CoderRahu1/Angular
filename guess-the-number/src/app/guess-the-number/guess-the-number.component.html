@@ -1,0 +1,25 @@
+<p>guess-the-number works!</p>
+<div class="game-container">
+  <h1>Guess The Number</h1>
+  <p>I'm thinking of a number between 1 and {{ maxNumber }}.</p>
+
+  <input
+    type="number"
+    name="guess"
+    [min]="1"
+    [max]="maxNumber"
+    step="1"
+    [disabled]="gameOver"
+    [(ngModel)]="guessedNumber"
+    (ngModelChange)="onGuessChange($event)"
+    placeholder="Enter your guess"
+    (keydown.enter)="submitGuess()"
+  />
+
+  <button (click)="submitGuess()" [disabled]="gameOver">Submit Guess</button>
+
+  <p class="feedback" *ngIf="feedbackMessage">{{ feedbackMessage }}</p>
+  <p class="attempts" *ngIf="attemptsLeft > 0 && !gameOver">Attempts left: {{ attemptsLeft }}</p>
+
+  <button *ngIf="gameOver" (click)="resetGame()">Play Again</button>
+</div>
