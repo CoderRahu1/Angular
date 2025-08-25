@@ -10,8 +10,10 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./guess-the-number.component.scss']
 })
 export class GuessTheNumberComponent {
+  currentYear = new Date().getFullYear();
   private static readonly MAX_NUMBER = 100;
   private static readonly MAX_ATTEMPTS = 10;
+
 
   maxNumber = GuessTheNumberComponent.MAX_NUMBER;
 
