@@ -1,0 +1,146 @@
+$primary: #ff6f61;
+$secondary: #4fc3f7;
+$accent: #ffd600;
+$bg: #222;
+$cell-size: 100px;
+
+.game-container {
+    background: linear-gradient(135deg, $primary 0%, $secondary 100%);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    padding: 32px;
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'Quicksand', 'Segoe UI', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    animation: bounceIn 1s;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.turn-indicator {
+    margin-bottom: 18px;
+    p {
+        font-size: 1.2rem;
+        background: rgba($accent, 0.2);
+        border-radius: 12px;
+        padding: 8px 0;
+        margin: 0;
+        color: $accent;
+        font-weight: 600;
+        letter-spacing: 1px;
+        box-shadow: 0 2px 8px rgba($accent, 0.15);
+        transition: background 0.3s;
+    }
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, $cell-size);
+    grid-template-rows: repeat(3, $cell-size);
+    gap: 12px;
+    justify-content: center;
+    margin: 0 auto 24px auto;
+}
+
+.cell {
+    background: $bg;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    font-size: 2.5rem;
+    color: $accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    user-select: none;
+    font-weight: bold;
+    position: relative;
+
+    &:hover {
+        background: adjust-color($bg, $lightness: 10%);
+        transform: scale(1.08);
+        box-shadow: 0 4px 16px rgba($accent, 0.25);
+    }
+
+    &.winner-cell {
+        background: $accent;
+        color: $primary;
+        animation: winnerPulse 0.8s infinite alternate;
+    }
+}
+
+@keyframes winnerPulse {
+    0% { box-shadow: 0 0 12px $accent; }
+    100% { box-shadow: 0 0 24px $primary; }
+}
+
+.winner {
+    p {
+        font-size: 1.3rem;
+        color: $primary;
+        background: rgba($accent, 0.25);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 12px 0;
+        font-weight: 700;
+        animation: winnerFadeIn 0.8s;
+    }
+}
+
+@keyframes winnerFadeIn {
+    from { opacity: 0; transform: scale(0.9);}
+    to { opacity: 1; transform: scale(1);}
+}
+
+button {
+    background: $accent;
+    color: $bg;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba($accent, 0.18);
+    margin-top: 18px;
+    transition: background 0.2s, transform 0.1s;
+
+    &:hover {
+        background: $secondary;
+        color: #fff;
+        transform: scale(1.07);
+    }
+}
+
+
+footer {
+    margin-top: 32px;
+    text-align: center;
+    p {
+        font-size: 1rem;
+        color: rgba(#fff, 0.7);
+        letter-spacing: 1px;
+        margin: 0;
+        font-style: italic;
+        background: rgba($secondary, 0.12);
+        border-radius: 8px;
+        padding: 8px 0;
+        box-shadow: 0 1px 4px rgba($secondary, 0.08);
+    }
+}

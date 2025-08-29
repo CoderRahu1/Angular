@@ -1,1 +1,30 @@
-<p>tic-tac-toe works!</p>
+<div class="game-container">
+    <h1>
+        Tic Tac Toe
+    </h1>
+    <div class="turn-indicator">
+        <p *ngIf="!winner && !isDraw">Current Turn: {{ currentPlayer }}</p>
+        <p *ngIf="winner">Winner: {{ winner }}</p>
+        <p *ngIf="isDraw">It's a Draw!</p>
+
+    </div>
+    <div class="board">
+        <div class="cell" *ngFor="let cell of board; let i = index" (click)="makeMove(i)">
+            {{ cell }}
+        </div>
+    
+    </div>
+    
+
+    <div class="winner">
+        <p *ngIf="winner">Congratulations! Player {{ winner }} wins!</p>
+        <p *ngIf="isDraw">It's a Draw! Try again.</p>
+    </div>
+
+    <button (click)="resetGame()">Reset Game</button>
+
+    <footer>
+        <p>Developed by Rahul Pillai </p>
+    </footer>
+</div>
+
