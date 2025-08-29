@@ -59,6 +59,10 @@
     * Concepts - mutiple methods
 <img src="image-4.png" alt="Todo" width="200"/>
 
+6. Tic Tac Toe Game:
+    * Concepts - a. Define winning patterns, b. reset game, c. draw game
+<img src="image-5.png" alt="Todo" width="200"/>
+
 
 
 
