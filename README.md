@@ -42,6 +42,8 @@
 
 <img src="image.png" alt="Profile Card" width="200"/>
 
+    * Play :https://github.com/CoderRahu1/Angular/blob/main/1.profile-card/src/index.html
+
 2. Counter - 
     * Concepts : Event binding to method, adding ng new component counter to app
 <img src="image-1.png" alt="Counter App" width="200"/>
