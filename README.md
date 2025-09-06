@@ -66,8 +66,8 @@
 <img src="image-5.png" alt="Todo" width="200"/>
 
 7. Dynamic List Filter/:
-    * Concepts - a. Data Binding, b. Pipe Operator.
-<img src="image-5.png" alt="Todo" width="200"/>
+    * Concepts - a. Data Binding, b. Pipe Operator - ng generate pipe filter>name.
+<img src="image-6.png" alt="Image Dynamic List Filter" width="200"/>
 
 
 
