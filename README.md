@@ -65,6 +65,10 @@
     * Concepts - a. Define winning patterns, b. reset game, c. draw game
 <img src="image-5.png" alt="Todo" width="200"/>
 
+7. Dynamic List Filter/:
+    * Concepts - a. Data Binding, b. Pipe Operator.
+<img src="image-5.png" alt="Todo" width="200"/>
+
 
 
 
