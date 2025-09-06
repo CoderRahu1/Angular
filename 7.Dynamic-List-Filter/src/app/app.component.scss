@@ -1,0 +1,144 @@
+// App Component SCSS
+
+// Variables
+$primary-color: #6c63ff;
+$accent-color: #ff6584;
+$bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+$shadow: 0 8px 24px rgba(108, 99, 255, 0.12);
+
+// Container styling
+.container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 2.5rem 2rem 2rem 2rem;
+    background: $bg-gradient;
+    border-radius: 1.5rem;
+    box-shadow: $shadow;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    // Animated background shapes
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.18;
+        z-index: 0;
+        pointer-events: none;
+        animation: float 8s ease-in-out infinite alternate;
+    }
+    &::before {
+        width: 180px;
+        height: 180px;
+        background: $primary-color;
+        top: -60px;
+        left: -60px;
+        animation-delay: 0s;
+    }
+    &::after {
+        width: 120px;
+        height: 120px;
+        background: $accent-color;
+        bottom: -40px;
+        right: -40px;
+        animation-delay: 2s;
+    }
+}
+
+// Floating animation for background shapes
+@keyframes float {
+    0% { transform: translateY(0) scale(1);}
+    100% { transform: translateY(20px) scale(1.08);}
+}
+
+// Heading
+h1 {
+    color: $primary-color;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 8px rgba(108, 99, 255, 0.08);
+}
+
+// Search input
+input[type="text"] {
+    width: 90%;
+    padding: 0.75rem 1.2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(108, 99, 255, 0.08);
+    margin-bottom: 2rem;
+    outline: none;
+    transition: box-shadow 0.3s, border 0.3s;
+
+    &:focus {
+        box-shadow: 0 4px 24px rgba(108, 99, 255, 0.18);
+        border: 2px solid $primary-color;
+    }
+}
+
+// List styling
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+li {
+    background: #fff;
+    margin: 0.5rem 0;
+    padding: 0.9rem 1.2rem;
+    border-radius: 1.2rem;
+    font-size: 1.08rem;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.07);
+    cursor: pointer;
+    transition: transform 0.18s, box-shadow 0.18s, background 0.3s;
+
+    // Animate in
+    animation: fadeInUp 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+    &:hover {
+        background: $primary-color;
+        color: #fff;
+        transform: translateY(-4px) scale(1.03);
+        box-shadow: 0 6px 18px rgba(108, 99, 255, 0.18);
+    }
+}
+
+// List item animation
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Responsive
+@media (max-width: 600px) {
+    .container {
+        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    input[type="text"] {
+        font-size: 1rem;
+    }
+    li {
+        font-size: 0.98rem;
+        padding: 0.7rem 0.8rem;
+    }
+}
