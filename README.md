@@ -65,11 +65,11 @@
     * Concepts - a. Define winning patterns, b. reset game, c. draw game
 <img src="image-5.png" alt="Todo" width="200"/>
 
-7. Dynamic List Filter/:
+7. Dynamic List Filter:
     * Concepts - a. Data Binding, b. Pipe Operator - ng generate pipe filter>name.
 <img src="image-6.png" alt="Image Dynamic List Filter" width="200"/>
 
-
+8. Rock Paper Scissors:
 
 
 
